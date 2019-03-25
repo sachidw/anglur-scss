@@ -3,19 +3,50 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+<!-- <mat-toolbar>
+  <mat-toolbar-row>
+    <a target="_blank" rel="noopener" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yY9zXUVwI4YkiJb2-Dv1Kcwg6mxyrFiWPzx16yS-wEQiwU65WQ">Trigger Warning</a>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <a target="_blank" rel="noopener" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yY9zXUVwI4YkiJb2-Dv1Kcwg6mxyrFiWPzx16yS-wEQiwU65WQ">Trigger Warning</a>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <a target="_blank" rel="noopener" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yY9zXUVwI4YkiJb2-Dv1Kcwg6mxyrFiWPzx16yS-wEQiwU65WQ">Trigger Warningl</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://www.chinesefortunecalendar.com/PC/Angel/Samples/Trump/Trump-200.jpg">
+  </div>
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://www.opensecrets.org/assets/candidates/trump-3cd2028ba4b67c833ff9950437ad8ff435eed853fd5bcf522e182f6738fc0799.jpg">
+  </div>
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUlXWvYRVNo-vVrdVRR-Yq7tpwWJc_6FN_hkE2tZs0P5IR_tbfTg">
+  </div>
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV45MqPsFIhgx_AKdodBy-BeCHBDwvYAjsaSuffpOcO7CNNBHYYA">
+  </div>
+
+</div>
+<div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yY9zXUVwI4YkiJb2-Dv1Kcwg6mxyrFiWPzx16yS-wEQiwU65WQ">
+  </div>
+  <div fxFlex="20%">
+    <img mat-card-image class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yY9zXUVwI4YkiJb2-Dv1Kcwg6mxyrFiWPzx16yS-wEQiwU65WQ">
+  </div>
+</div> -->
+
+<div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <mat-card class="card-picture" *ngFor="let picture of pictures">
+    <!-- <span fxFlex="80%">{{picture.title}}</span> -->
+    <img mat-card-image [src]="picture.img">
+  </mat-card>
+</div>
